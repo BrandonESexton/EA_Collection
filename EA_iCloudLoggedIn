@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Check if iCloud is signed in
+if [[ $(defaults read MobileMeAccounts) == *"Accounts"* ]]; then
+    echo "<result>iCloud Logged In</result>"
+else
+    echo "<result>No iCloud</result>"
+fi
